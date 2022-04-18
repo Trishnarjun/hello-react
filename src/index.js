@@ -14,14 +14,17 @@ const Application = () => {
   const [name, setName] = useState("");
 
   // your code here
-
+  let greet = 'hello';
+  if (name === "") {
+    greet = "";
+  }
   return (
     <main>
       <input value={name} onChange={(event) => setName(event.target.value)} placeholder='Type your name'/>
       <div> 
         <Button setName={setName}/>
       </div>
-      <h1>Hello {name}</h1>
+      <h1>{greet} {name}</h1>
     </main>
   );
 };
