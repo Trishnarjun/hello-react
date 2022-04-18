@@ -5,7 +5,7 @@ import './index.css';
 const Button = (props) => {
   // your code here
   return (
-    <button>Reset</button>
+    <button onClick={()=>{console.log("reset")}}>Reset</button>
   )
 };
 
